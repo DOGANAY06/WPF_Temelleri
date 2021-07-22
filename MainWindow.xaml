@@ -1,0 +1,37 @@
+﻿<Window x:Class="GirisWDPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GirisWDPF"
+       
+        mc:Ignorable="d"
+        Title="Ana Pencere" Height="450" Width="800" Loaded="Window_Loaded">
+    <!--x:Class derleme gerçekleceği zaman oluşturulacak sınıf-->
+    <Grid x:Name="grd1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Background="Green"></Border>
+        <Border Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="Red"></Border>
+        <StackPanel>
+            <Button>Geç</Button>
+            <Button>Seç</Button>
+            <Button Content="Tıkla"/>
+            <Button>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label>Merhaba Dünya</Label>
+                    <TextBlock VerticalAlignment="Center">Selamlar</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>
